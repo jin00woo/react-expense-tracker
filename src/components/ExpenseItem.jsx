@@ -1,20 +1,18 @@
 import React from 'react';
-import "./ExpenseItem.css"
+import "./ExpenseItem.css";
+import ExpenseDate from "./ExpenseDate";
+import Card from "./Card";
 
-function ExpenseItem(){
-  const expenseDate = new Date(2022,5,30);
-  const expenseTitle = "Car Insurance";
-  const expenseAmount = 123;
-
+function ExpenseItem(props){
   
   return (
-    <div className="expense-item">
-      <div>March 28th 2021</div>
+    <Card className="expense-item">
+      <ExpenseDate date={props.date}></ExpenseDate>
       <div className="expense-item__description">
-      <h2>{expenseTitle}</h2>
-      <div className = "expense-item__price">$294.12</div>
+      <h2>{props.title}</h2>
+      <div className = "expense-item__price">${props.amount}</div>
       </div>
-    </div>
+    </Card>
     
   );
 }
