@@ -28,8 +28,8 @@
 .expense-item__price {
   font-size: 1rem;
   font-weight: bold;
-  color: navy;
-  background-color: #fff;
+  color: #fff;
+  background-color: #333;
   border: 1px solid #333;
   padding: 0.5rem;
   border-radius: 12px;
