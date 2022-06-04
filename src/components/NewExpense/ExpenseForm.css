@@ -6,6 +6,10 @@
   text-align: left;
 }
 
+.new-expense__control {
+    margin: 1rem;
+}
+
 .new-expense__control label {
   font-weight: bold;
   margin-bottom: 0.5rem;
